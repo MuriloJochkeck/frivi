@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #000000;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Container centralizado */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo da seção principal */
+main {
+    padding: 20px 0;
+}
+
+.featured-games {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.featured-games h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Grade de jogos */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas de largura igual */
+    gap: 20px;
+    justify-items: center;
+}
+
+.game-item {
+    background-color: #ff0000;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 400px; /* Largura fixa para os itens do jogo */
+}
+
+.game-item img {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 10px;
+    height: auto;
+    width: 100%; /* Ajusta a largura da imagem para caber no item do jogo */
+}
+
+.game-item h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+/* Efeito de hover nos itens do jogo */
+.game-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1em;
+}
